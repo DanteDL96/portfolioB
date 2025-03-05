@@ -127,13 +127,13 @@ Global Styles
 */
 html,
 body {
-  background: #1f2122;
+  background: #232121;
   font-family: "Roboto", sans-serif;
 }
 
 body .page-content {
   margin-top: 0px;
-  background-color: #27292a;
+  background-color: #110807;
   padding: 60px;
   border-radius: 23px;
 }
@@ -146,12 +146,12 @@ p {
 }
 
 ::selection {
-  background: orangered;
+  background: #FF4500;
   color: #fff;
 }
 
 ::-moz-selection {
-  background: orangered;
+  background: #FF4500;
   color: #fff;
 }
 
@@ -163,7 +163,7 @@ p {
 .main-button a {
   font-size: 14px;
   color: #fff;
-  background-color: orangered;
+  background-color: #FF4500;
   padding: 12px 30px;
   display: inline-block;
   border-radius: 25px;
@@ -177,7 +177,7 @@ p {
 
 .main-button a:hover {
   background-color: #fff;
-  color: orangered;
+  color: #FF4500;
 }
 
 .main-border-button a {
@@ -330,6 +330,25 @@ Pre-loader Style
   border-radius: 50%;
 }
 
+
+
+/* 
+---------------------------------------------
+scrolling bar Style
+--------------------------------------------- 
+*/
+body::-webkit-scrollbar {
+  width: .25em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #FF4500;
+  outline: 1px solid #FF4500;
+}
 
 
 /* 
@@ -777,7 +796,7 @@ Header Style
 @media(max-width:425px){
   .main-banner {
     background-image: none !important;
-    background-color: black;
+    background-color: #232121;
     background-position: center center;
     background-size: cover;
     min-height: 380px;
@@ -792,12 +811,14 @@ Banner Style
 */
 
 .main-banner {
-  background-image: url(../images/OGPicExpanded.png);
+  /* background-image: url(../images/OGPicExpanded.png); */
   background-position: center center;
   background-size: cover;
   min-height: 380px;
   border-radius: 23px;
   padding: 80px 60px;
+  background-color: #232121;
+
 }
 
 .main-banner p {
@@ -815,7 +836,43 @@ Banner Style
 
 .main-banner h1 em {
   font-style: normal;
-  color: orangered;
+  color: #FF4500;
+font-size: 4rem;
+font-weight: bolder !important;
+}
+
+/* profile photo */
+
+.profile{
+  border-radius: 50%;
+  height: auto;
+  width: 12rem;
+  margin-bottom: 20px;
+}
+@media (min-width:768px) {
+  .profile{
+    width: 12rem;
+    margin-left: -1rem;
+  }
+}
+@media (min-width:825px) {
+  .profile{
+    width: 12rem;
+    margin-left: -1rem;
+  }
+}
+@media (min-width:992px) {
+  .profile{
+    width: 16rem;
+    margin-left: -1rem;
+    margin-bottom: -2rem;
+  }
+}
+@media (min-width:1200px) {
+.profile{
+  width: 16rem;
+  margin-bottom:-4rem;
+}
 }
 
 /* 
@@ -827,12 +884,12 @@ Most Popular Style
 .most-popular {
   margin-top: 60px;
   padding: 30px;
-  background-color: #1f2122;
+  background-color: #110807;
   border-radius: 23px;
 }
 
 .most-popular .item {
-  background-color: #27292a;
+  background-color: #232121;
   padding: 30px 15px;
   border-radius: 23px;
   margin-bottom: 30px;
@@ -952,6 +1009,7 @@ Gaming Library Style
   text-align: center;
   margin-bottom: -53px;
 }
+
 
 /* 
 ---------------------------------------------
@@ -1759,7 +1817,7 @@ Responsive Style
 --------------------------------------------- 
 */
 .most-popular .item  .modal-item{
-  background-color: #27292a;
+  background-color: #232121;
   padding: 30px 15px;
   border-radius: 23px;
   margin-bottom: 30px;
@@ -1767,7 +1825,7 @@ Responsive Style
 .main-button {
   font-size: 14px;
   color: #fff;
-  background-color: orangered !important;
+  background-color: #FF4500 !important;
   padding: 12px 30px;
   display: inline-block;
   border-radius: 25px;
@@ -1789,4 +1847,41 @@ Responsive Style
 }
 .modal-header .btn-close {
   background-color:white !important;
+}
+
+.icon-holder {
+  background-color: #F9ECE1;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;    /* Centers vertically */
+  padding: 1rem 0;
+  width: 100%;
+  border-radius: 2rem;
+}
+.icon-holder .col-4 {
+  display: flex;
+  justify-content: center; /* Centers the icon horizontally within the column */
+  align-items: center;    /* Centers the icon vertically within the column */
+}
+.icon-holder .icon {
+  width: 4rem; /* Icon size */
+  height: auto;
+}
+/* 
+---------------------------------------------
+Global Focus Style
+--------------------------------------------- 
+*/
+* {
+  outline: none; /* Removes default outline */
+}
+
+*:focus {
+  outline: 5px solid #007BFF; /* Adds a custom focus outline globally */
+  outline-offset: 2px; /* Optional: Adjusts space between the outline and element */
+}
+
+.main-button:focus{
+  outline: 5px solid #007BFF; /* Adds a custom focus outline globally */
+  outline-offset: 2px; /* Optional: Adjusts space between the outline and element */
 }
