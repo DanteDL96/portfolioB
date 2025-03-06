@@ -1839,7 +1839,7 @@ Responsive Style
 
 }   
 
-@media (max-width:400px) {
+@media (max-width:575px ) {
 .main-button{
   width: 100%;
 }
