@@ -1836,7 +1836,16 @@ Responsive Style
   position: relative;
   overflow: hidden;
   font-weight: 700;
+
+}   
+
+@media (max-width:400px) {
+.main-button{
+  width: 100%;
 }
+  
+}
+
 .main-button :hover{
   color: #212529;
 }
