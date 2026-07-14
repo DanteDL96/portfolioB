@@ -219,7 +219,7 @@ section {
 
 .heading-section h2 {
   color: white;
-  font-size: 34px;
+  font-size: 60px;
   text-decoration: none;
   margin-bottom: 30px;
 }
@@ -837,7 +837,7 @@ Banner Style
 .main-banner h1 em {
   font-style: normal;
   color: #FF4500;
-font-size: 4rem;
+font-size: 5.5rem;
 font-weight: bolder !important;
 }
 
@@ -1823,7 +1823,7 @@ Responsive Style
   margin-bottom: 30px;
 }
 .main-button {
-  font-size: 14px;
+  font-size: 1.25rem;
   color: #fff;
   background-color: #FF4500 !important;
   padding: 12px 30px;
@@ -1893,4 +1893,8 @@ Global Focus Style
 .main-button:focus{
   outline: 5px solid #007BFF; /* Adds a custom focus outline globally */
   outline-offset: 2px; /* Optional: Adjusts space between the outline and element */
+}
+/* Custom modal width override */
+.modal-dialog {
+  --bs-modal-width: 900px; /* adjust as needed */
 }
