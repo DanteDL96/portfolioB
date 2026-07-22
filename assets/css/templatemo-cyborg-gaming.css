@@ -102,6 +102,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0px;
   margin-bottom: 0px;
   color: #fff;
+  font-size: 2.8rem;
   /* font-weight: 700; */
 }
 
@@ -903,7 +904,7 @@ Most Popular Style
 }
 
 .most-popular .item img {
-  border-radius: 23px;
+  border-radius: 12px;
 }
 
 .most-popular .item h3 {
@@ -1863,9 +1864,9 @@ Responsive Style
   display: flex;
   justify-content: center; /* Centers horizontally */
   align-items: center;    /* Centers vertically */
-  padding: 1rem 0;
+  padding: .2rem 0;
   width: 100%;
-  border-radius: 2rem;
+  border-radius: 1rem;
 }
 .icon-holder .col-4 {
   display: flex;
@@ -1873,8 +1874,15 @@ Responsive Style
   align-items: center;    /* Centers the icon vertically within the column */
 }
 .icon-holder .icon {
-  width: 4rem; /* Icon size */
+  width: 3rem; /* Icon size */
   height: auto;
+  /* margin-left: 20%; */
+}
+
+.icon-holder .col-2 .icon {
+  width: 3rem; /* Icon size */
+  height: auto;
+  margin-left: 20%;
 }
 /* 
 ---------------------------------------------
